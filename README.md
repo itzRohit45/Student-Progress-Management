@@ -2,7 +2,7 @@
 
 A comprehensive full-stack web application for tracking and managing students' progress in competitive programming through Codeforces integration. This system helps educators monitor student performance, engagement, and provides automated reminders for inactive students.
 
-![Student Progress Management System](https://via.placeholder.com/800x400?text=Student+Progress+Management)
+
 
 ## Table of Contents
 

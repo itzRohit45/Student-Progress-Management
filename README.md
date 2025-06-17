@@ -260,39 +260,6 @@ The system provides various configuration options that can be changed through th
    - Reminders include personalized messages and performance statistics
    - System tracks reminder history for each student
 
-## Deployment
-
-### Production Deployment
-
-1. **Backend Deployment**:
-   - Set NODE_ENV to production:
-     ```
-     NODE_ENV=production
-     ```
-   - Configure production MongoDB URI
-   - Set up proper email credentials
-   - Consider using PM2 for process management:
-     ```bash
-     npm install -g pm2
-     pm2 start server.js
-     ```
-
-2. **Frontend Deployment**:
-   - Build the React application:
-     ```bash
-     cd frontend
-     npm run build
-     ```
-   - Serve the static files using Nginx, Apache, or similar web server
-   - Configure the production API URL in `axiosConfig.js`
-
-3. **Security Considerations**:
-   - Use HTTPS for all production traffic
-   - Set up proper MongoDB authentication
-   - Use environment variables for sensitive information
-   - Consider implementing rate limiting for API endpoints
-
-
 ## Contributing
 
 We welcome contributions to improve the Student Progress Management System. To contribute:

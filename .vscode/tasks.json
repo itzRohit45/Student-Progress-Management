@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Backend Server",
+      "type": "shell",
+      "command": "cd ${workspaceFolder}/backend && npm install && npm run dev",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Frontend Server",
+      "type": "shell",
+      "command": "cd ${workspaceFolder}/frontend && npm install && npm start",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Full Stack Application",
+      "dependsOn": ["Start Backend Server", "Start Frontend Server"],
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+:root {
+  /* Light theme variables */
+  --primary-light: #3498db;
+  --secondary-light: #2ecc71;
+  --background-light: #f8f9fa;
+  --surface-light: #ffffff;
+  --text-primary-light: #333333;
+  --text-secondary-light: #666666;
+  --border-light: #e0e0e0;
+  --error-light: #e74c3c;
+  --success-light: #27ae60;
+  --chart-background-light: #ffffff;
+  --grid-color-light: rgba(0, 0, 0, 0.1);
+  --text-highlight-light: #007bff;
+  
+  /* Dark theme variables */
+  --primary-dark: #4dabf5;
+  --secondary-dark: #3ee37e;
+  --background-dark: #121212;
+  --surface-dark: #1e1e1e;
+  --text-primary-dark: #f0f0f0;
+  --text-secondary-dark: #c0c0c0;
+  --border-dark: #444444;
+  --error-dark: #ff6b6b;
+  --success-dark: #4ade80;
+  --chart-background-dark: #242424;
+  --grid-color-dark: rgba(255, 255, 255, 0.1);
+  --text-highlight-dark: #64b5f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme (default) */
+body.light-theme {
+  background-color: var(--background-light);
+  color: var(--text-primary-light);
+}
+
+/* Dark theme */
+body.dark-theme {
+  background-color: var(--background-dark);
+  color: var(--text-primary-dark);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, select {
+  font-family: 'Roboto', sans-serif;
+}
